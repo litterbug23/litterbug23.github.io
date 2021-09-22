@@ -350,6 +350,47 @@ td {
   flex-direction: column;
   padding: 0 24px;
 }
+.post-item {
+  display: flex;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #ced4da;
+}
+.post-item:last-of-type {
+  border-bottom: none;
+}
+.post-item .left {
+  flex: 1;
+}
+.post-item .left .post-title {
+  font-size: 24px;
+  transition: all 0.3s;
+}
+.post-item .left .post-title:hover {
+  color: #212529;
+}
+.post-item .left .post-date {
+  font-size: 18px;
+  padding: 24px 0;
+  color: #adb5bd;
+}
+.post-item .left .post-abstract {
+  line-height: 24px;
+  font-size: 18px;
+  color: #868e96;
+}
+.post-item .right {
+  flex-shrink: 0;
+  margin-left: 24px;
+  width: 38.2%;
+}
+.post-item .right .feature-container {
+  padding-top: 56.25%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 25, 0.1), 0 5px 75px 1px rgba(0, 0, 50, 0.2);
+}
 .site-header {
   padding: 48px 0;
   text-align: center;
